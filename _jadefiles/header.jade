@@ -1,0 +1,24 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") Sobre
+    li: a(href="#about") Artigos
+    li: a(href="#about") Lista Vip
+    li: a(href="#about") Youtube
+    li: a(href="#about") Facebook
+    li: a(href="#mailto:contato@redacaodeaprovado.com.br") Contato
+
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo Brian Ramirez 
+    
+    nav.site-nav
+      +nav-content()
+      
+      a(href="mailto:contato@redacaodeaprovado.com.br").email-link +email me
+
+    .mobile-nav-toggle: span
+        
